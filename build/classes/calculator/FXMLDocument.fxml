@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.FXMLDocumentController">
+   <children>
+      <TextField fx:id="Display" alignment="CENTER_RIGHT" prefHeight="64.0" prefWidth="300.0">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </TextField>
+      <GridPane hgap="3.0" prefHeight="336.0" prefWidth="300.0" vgap="3.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#ClearButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="C" textFill="#fffbfb" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#AllClearButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="AC" textFill="#fffbfb" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OffButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="OFF" textFill="#fffbfb">
+               <font>
+                  <Font name="Agency FB Bold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OperatorAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #822369;" text="/" textFill="#fffbfb" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ResultButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #822369;" text="=" textFill="#fffbfb" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#DotButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="." textFill="#fffbfb" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="0" textFill="#fffbfb" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="3" textFill="#fffbfb" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="2" textFill="#fffbfb" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OperatorAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #822369;" text="-" textFill="#fffbfb" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="5" textFill="#fffbfb" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OperatorAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #822369;" text="X" textFill="#fffbfb" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="9" textFill="#fffbfb" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OperatorAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #822369;" text="+" textFill="#fffbfb" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="6" textFill="#fffbfb" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="8" textFill="#fffbfb" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ParsentButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="\%" textFill="#fffbfb" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="1" textFill="#fffbfb" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="4" textFill="#fffbfb" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#NumberButtonAction" prefHeight="68.0" prefWidth="80.0" style="-fx-background-color: #1a5573;" text="7" textFill="#fffbfb" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Agency FB Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="2.0" left="1.0" right="1.0" />
+         </padding>
+      </GridPane>
+   </children>
+</VBox>
